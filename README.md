@@ -1,2 +1,0 @@
-# stepik_auto_tests_course
-test_test_test
