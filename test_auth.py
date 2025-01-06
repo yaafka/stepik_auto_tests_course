@@ -42,5 +42,4 @@ def test_auth(link):
     submit_button.click()
     attempt_result = wait.until(
         EC.visibility_of_element_located((By.XPATH, '//p[@class = "smart-hints__hint"]')))
-    print(attempt_result.text)
     assert attempt_result.text == 'Correct!'
