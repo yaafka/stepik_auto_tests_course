@@ -35,7 +35,7 @@ def test_auth(link):
     time.sleep(2)
     answer_element = wait.until(
         EC.visibility_of_element_located((By.TAG_NAME, "textarea")))
-    answer = math.log(int(time.time()))
+    answer = authpage.get_answer()
     answer_element.send_keys(answer)
     submit_button = browser.find_element(
         By.XPATH, '//button[@class ="submit-submission"]')
